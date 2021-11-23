@@ -70,10 +70,9 @@ public class Examen {
 			System.out.println("What is/are your answer(s)? enter values separated by space ex:1 2");
 			Scanner sc = new Scanner(System.in);
 			String[] stringResps;
-			int[] resps = { -1 };
 
 			stringResps = sc.nextLine().split(" ");
-			resps = new int[stringResps.length];
+			int[] resps = new int[stringResps.length];
 			for (int i = 0; i < stringResps.length; i++) {
 				resps[i] = Integer.parseInt(stringResps[i]);
 			}
