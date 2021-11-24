@@ -5,6 +5,7 @@ This repository contains the materials *[course examples and practical work]* of
 # Topics:
 - Threads
 - Generics
+- Collections
 
 
 Good luck!
