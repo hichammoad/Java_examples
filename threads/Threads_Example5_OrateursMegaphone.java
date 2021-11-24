@@ -41,7 +41,7 @@ class Megaphone {
 	}
 }
 
-public class Threads_Example5 {
+public class Threads_Example5_OrateursMegaphone {
 
 	public static void main(String[] args) {
 

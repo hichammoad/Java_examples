@@ -1,7 +1,7 @@
 package threads;
 import java.util.Scanner;
 
-public class Threads_Example2 {
+public class Threads_Example2_ask4Name {
 	
 	public static void main(String[] args) {
 		

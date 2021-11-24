@@ -45,7 +45,7 @@ class GenerateHTML implements Runnable {
 
 }
 
-public class Threads_Example4 {
+public class Threads_Example4_GenerateHtml {
 
 	public static void main(String[] args) {
 

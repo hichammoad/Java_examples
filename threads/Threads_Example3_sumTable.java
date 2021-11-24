@@ -1,6 +1,6 @@
 package threads;
 
-public class Threads_Example3 {
+public class Threads_Example3_sumTable {
 
 	// find the sum of elements of an array:
 	public static int sumTable(int tab[]) {

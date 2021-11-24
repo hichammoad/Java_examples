@@ -13,7 +13,7 @@ class MyThread extends Thread {
 	}
 }
 
-public class Threads_Example1 {
+public class Threads_Example1_basicThread {
 
 	public static void main(String[] args) {
 		MyThread thread_A = new MyThread();
