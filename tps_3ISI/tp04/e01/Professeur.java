@@ -22,4 +22,59 @@ public class Professeur extends Personne {
 		this.listeCoures = listeCoures;
 	}
 
+	// professeur qui a plus de modules:
+	public Professeur compareTo(Professeur p) {
+		int nombreCours1 = 0;
+		int nombreCours2 = 0;
+
+		for (Cours c : this.listeCoures) {
+			if (c != null) {
+				nombreCours1++;
+			}
+		}
+
+		for (Cours c : p.listeCoures) {
+			if (c != null) {
+				nombreCours2++;
+			}
+		}
+
+		if (nombreCours1 > nombreCours2) {
+			return this;
+		} else {
+			return p;
+		}
+
+	}
+
+	// professeur qui a plus de nombre d'heures:
+	public Professeur compareToCharge(Professeur p) {
+		int nombreCours1 = 0;
+		int nombreCours2 = 0;
+
+		for (Cours c : this.listeCoures) {
+			if (c != null) {
+				nombreCours1 += c.nbHeures;
+			}
+		}
+
+		for (Cours c : p.listeCoures) {
+			if (c != null) {
+				nombreCours2 += c.nbHeures;
+			}
+		}
+
+		if (nombreCours1 > nombreCours2) {
+			return this;
+		} else {
+			return p;
+		}
+
+	}
+
+	@Override
+	public String toString() {
+		return num + " " + nom;
+	}
+
 }

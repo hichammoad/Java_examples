@@ -28,7 +28,7 @@ public class Gerer_cours {
 
 	public boolean supprimerCours(String code) {
 		for (int i = 0; i < cours.length; i++) {
-			if (cours[i].getId().contentEquals(code)) {
+			if (cours[i].getId().equals(code)) {
 				cours[i] = null;
 				return true;
 			}
