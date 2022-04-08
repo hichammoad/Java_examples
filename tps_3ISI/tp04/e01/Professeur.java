@@ -49,22 +49,22 @@ public class Professeur extends Personne {
 
 	// professeur qui a plus de nombre d'heures:
 	public Professeur compareToCharge(Professeur p) {
-		int nombreCours1 = 0;
-		int nombreCours2 = 0;
+		int nombreHeures1 = 0;
+		int nombreHeures2 = 0;
 
 		for (Cours c : this.listeCoures) {
 			if (c != null) {
-				nombreCours1 += c.nbHeures;
+				nombreHeures1 += c.nbHeures;
 			}
 		}
 
 		for (Cours c : p.listeCoures) {
 			if (c != null) {
-				nombreCours2 += c.nbHeures;
+				nombreHeures2 += c.nbHeures;
 			}
 		}
 
-		if (nombreCours1 > nombreCours2) {
+		if (nombreHeures1 > nombreHeures2) {
 			return this;
 		} else {
 			return p;
