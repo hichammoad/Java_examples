@@ -60,4 +60,18 @@ public class Cours {
 		this.nbHeures = nbHeures;
 	}
 
+	@Override
+	public String toString() {
+		return id + " " + intitule + " " + nbHeures;
+	}
+
+	// retourne le cours qui a plus de charge horaire
+	public Cours compareTo(Cours c) {
+		if (this.nbHeures > c.nbHeures) {
+			return this;
+		} else {
+			return c;
+		}
+	}
+
 }
